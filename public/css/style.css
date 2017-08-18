@@ -1,0 +1,74 @@
+/*********************************
+*** Uses BEM http://getbem.com/ ***
+**********************************/
+
+/* RESETS */
+
+* {
+    box-sizing: border-box;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* header */
+
+.navbar {
+    background: #5ebacf;
+}
+
+.navbar__links{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar__link{
+    color: white;
+    padding: 0.5em 0 0.5em 1em;
+    display: inline-block;
+}
+
+.navbar__link:hover{
+    color: lightgrey;
+}
+
+/* title */
+
+.title {
+    text-align: center;
+}
+
+/* article */
+
+.article__paragraph{
+    padding: 0 0.75em;
+}
+
+.article__title{
+    padding: 0 0.75em;
+}
+
+/* events */
+
+.event{
+    padding: 0 0.75em;
+}
+
+ .event__img{
+    width: 100%;
+ }
+
+/* MEDIA QUERIES FOR  EVERYTHING ABOVE MOBILE */
+@media only screen and (min-width: 768px) {
+    /* events */
+    #events{
+        display: flex;
+    }
+}
